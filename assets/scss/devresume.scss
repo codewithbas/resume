@@ -1,0 +1,338 @@
+/*! 
+ * Template Name: DevResume - Bootstrap 5 Resume/CV Template for Software Developers
+ * Version: Bootstrap 5 v1.0
+ * Author: Xiaoying Riley
+ * Copyright: 3rd Wave Media Ltd.
+ * Twitter: @3rdwave_themes
+ * Website: http://themes.3rdwavemedia.com/
+*/
+
+/*************************** Theme Colours****************************/
+// Define theme colour scheme
+$theme-color-primary: #291e95;
+$theme-color-primary-dark: lighten($theme-color-primary, 25%);
+$theme-text-color-primary: #292929;
+$theme-text-color-secondary: lighten($theme-text-color-primary, 15%);
+$theme-text-color-light: lighten($theme-text-color-primary, 40%);
+$theme-border-color:  lighten($theme-text-color-primary, 60%);
+$background: #ffffff;
+$btn-color: #ff0000;
+
+.dark {
+	a {
+		color: $theme-color-primary-dark;
+		&:hover, &:focus {
+			background: lighten($theme-color-primary-dark, 15%);
+		}
+	}
+	body {
+		background: #444;
+		color: #f0f0f0;
+	}
+
+	.btn, .btn-primary {
+		background: $theme-color-primary-dark;
+		border: #f0f0f0;
+		&:hover, &:focus {
+			background: #636ec3;
+		}
+	}
+
+	.resume-wrapper {
+		background: #282828;
+	}
+
+	.hr, .resume-contact, .resume-aside  {
+		border-left: 1px solid rgba(113, 112, 112, 8%)
+	}
+
+	a.theme-link, a.resume-link {
+		color: $theme-color-primary-dark;
+		text-decoration: underline;
+		&:hover {
+			color: #636ec3;
+		}
+	}
+	.resume-section-heading, .resume-name {
+		color: $theme-color-primary-dark;
+	}
+
+	.shadow-lg {
+		box-shadow: 0 1rem 3rem rgba(118, 118, 116, 0.175)!important
+	}
+
+	.resume-main, .resume-degree, .resume-degree-org, 
+	.resume-degree-time, .text-muted, .item-title, .item-meta {
+		color: #f0f0f0 !important;
+	}
+}
+
+// @media print {
+// 	.btn, .btn-primary, .footer {
+// 		opacity: 0;
+// 	}
+// }
+
+.pdf-cta {
+	color: $theme-color-primary;
+	font-weight: 400;
+	font-size: small!important;
+	padding-top: 2em;
+	padding-left: 1em;
+
+	padding: 2em;
+
+
+	padding-top: 2em;
+	padding-left: 1em;
+
+}
+.dark {
+	.pdf-cta {
+		color: white;
+	}
+	&.pdf-cta {
+		color: white;
+	}
+}
+
+
+.pdf-link {
+	font-weight: 600;
+	color: $theme-text-color-primary;
+	text-decoration: underline;
+	text-decoration-thickness: 0.2em;
+	text-decoration-color: $theme-color-primary;
+}
+
+
+@media print {
+	html, body, * {
+	  visibility: hidden;
+	}
+
+	.pdf-cta {
+		visibility: hidden;
+		opacity: 0;
+		height: 0;
+	}
+
+	.dark-mode-switch {
+		opacity: 0;
+	}
+
+	.resume-wrapper * {
+	  visibility: visible;
+	}
+
+	.resume-wrapper {
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	}
+	@page {
+		margin: 2cm;
+		size: 16in 20.5in;
+	}
+  }
+
+/*************************** Variables Section. *****************************/
+// Create variables to override the default value for variables used in the Bootstrap SCSS files.
+$gray-100: lighten($theme-text-color-primary, 60%);
+$gray-200: lighten($theme-text-color-primary, 55%);
+$gray-300: lighten($theme-text-color-primary, 50%);
+$gray-400: lighten($theme-text-color-primary, 45%);
+$gray-500: lighten($theme-text-color-primary, 40%);
+$gray-600: lighten($theme-text-color-primary, 30%);
+$gray-700: lighten($theme-text-color-primary, 20%);
+$gray-800: lighten($theme-text-color-primary, 10%);
+$gray-900: $theme-text-color-primary;
+
+/* Override BS5 sass color */
+$primary: $theme-color-primary;
+$secondary: $theme-text-color-secondary;
+
+/* Override BS5 font families */
+// $font-family-sans-serif:      Times;
+// $font-family-monospace:       Times;
+
+/*************************** Import Bootstrap  *****************************/
+@import "bootstrap/scss/bootstrap.scss";
+
+
+/*************************** DevResume Styles ****************************/
+
+/*********** Theme Generic **********/
+body { 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $theme-text-color-secondary;
+	background: $background;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $theme-text-color-primary;
+	font-weight: bold;
+}
+
+a.theme-link {
+	color: $theme-text-color-primary;
+	text-decoration: underline;
+    -webkit-text-decoration-color: rgba($theme-text-color-primary,0.3);
+    text-decoration-color: rgba($theme-text-color-primary,0.3);
+    &:hover {
+	    color: $theme-color-primary;
+	    -webkit-text-decoration-color: rgba($theme-color-primary,0.8);
+	        text-decoration-color: rgba($theme-color-primary,0.8);
+    }
+}
+
+.btn {
+	font-weight: bold;
+	padding: .375rem 1rem;
+	height: 2.5rem;
+	font-size: 1rem;
+}
+
+.btn:focus, .btn.focus {
+	box-shadow: none !important;
+}
+
+.btn-primary {
+	color: #fff;
+}
+
+.demo-btn-on-bg {
+	background: rgba(0, 0, 0, 0.2);
+	&:hover {
+		background: rgba(0, 0, 0, 0.3);
+	}
+}
+
+.media-body {
+	padding-top: 1rem;
+}
+/*********** Resume **********/
+.resume-wrapper {
+	border: 1px solid rgba(0, 0, 0, 0.025);
+	background: lighten($background, 5%);
+}
+
+.d-flex {
+	justify-content: flex-end;
+	display: flex;
+}
+
+.resume-section-heading {
+	position: relative;
+	padding-left: 1rem;
+	font-size: 1.125rem;
+	letter-spacing: 0.15rem;
+	color: $theme-color-primary;
+   &:before {
+	   content: "";
+	    display: inline-block;
+	    width: 5px;
+	    height: 100%;
+	    background: $theme-color-primary;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+   }
+}
+
+.resume-name {
+	font-size: 2.75rem;
+	font-weight: 900;
+	letter-spacing: 0.4rem;
+	color: $theme-color-primary;
+	
+}
+
+.resume-tagline {
+	font-size: 1.25rem;
+	font-weight: 300;
+}
+
+.resume-contact {
+	border-left: 1px solid rgba(0, 0, 0, 0.08);
+	font-size: 0.75rem;
+}
+
+a.resume-link {
+	color: $theme-text-color-secondary;
+	&:hover {
+		color: $theme-color-primary;
+	}
+}
+
+.resume-profile-image {
+	max-width: 120px;
+}
+
+.resume-intro {
+	font-size: 0.875rem;
+}
+.resume-main {
+	.item-title {
+		font-size: 1rem;
+	}
+	
+   .item-meta {
+	   font-size: 0.75rem;
+   }
+   .item-content {
+		font-size: 0.875rem;
+	}
+}
+
+.resume-aside {
+	border-left: 1px solid rgba(0, 0, 0, 0.08);
+	.item {
+		font-size: 0.875rem;
+	}
+	.item-title {
+		font-size: 1rem;
+	}
+	
+}
+
+
+.resume-education-list, .resume-awards-list {
+    font-size: 0.875rem;
+}
+
+
+.resume-degree-time-org, .resume-degree-time {
+	font-size: 0.75rem;
+}
+
+.resume-lang-list, .resume-interests-list {
+	font-size: 0.875rem;
+}
+
+.resume-social-list {
+	font-size: 0.75rem;
+}
+
+
+.fa-heart {
+	color: #fb866a;
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+    .resume-aside {
+	    border-left: 0;
+    }
+}
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+	.resume-contact {
+	    border-left: 0;
+    }
+}
+    

@@ -1,0 +1,66 @@
+name: run main.py
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout repo content
+        uses: actions/checkout@v3 # checkout the repository content to github runner
+
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9' # install the python version needed
+          
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.85.0"
+
+      - name: Build Website
+        run: hugo --minify
+
+      - name: Deploy to Netlify
+        run: netlify deploy --dir=public --message="Auto Deploy" --prod
+        env: 
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+          NETLIFY_SITE_ID: ${{ vars.NETLIFY_SITE_ID }}
+
+      - name: generate PDFs # run main.py
+        env:
+          PDFCO_KEY: ${{ secrets.PDFCO_KEY }}
+          RESUME_URL: ${{ vars.RESUME_URL }}
+        run: |
+          python get_pdf.py
+          cp static_pdf/*.pdf ./static/
+          cp static_pdf/*.pdf ./public/
+
+      - name: Deploy to Netlify
+        run: netlify deploy --dir=public --message="Auto Deploy with PDFs" --prod
+        env: 
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+          NETLIFY_SITE_ID: ${{ vars.NETLIFY_SITE_ID }}
+          
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add static
+          git diff-index --quiet HEAD || (git commit -a -m "updated PDFs" --allow-empty)
+          
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main 

@@ -1,0 +1,147 @@
+# Page settings
+
+baseURL = "https://resume-demo.bas.work/"
+languageCode = "en"
+title = "John Doe"
+enableGitInfo = false
+googleAnalytics = "UA-XXXXXXX-Y"
+
+[params]
+    author = "John Doe"
+    description = "Demo Resume"
+    og_image = "better-software.png"
+    twitterName = "@bascodes"
+    ghRepo = "https://github.com/codewithbas/resume/"
+    hugoRepo = "https://github.com/gohugoio/hugo/"
+
+    [params.profile]
+        enable = true
+        name = "John Doe"
+        tagline = "Demo Resume"
+        tagline_ = "Software Engineer | Consultant | Trainer"
+        avatar = "bas-steins-2.jpg"
+
+    [params.contact]
+        enable = true
+
+        location = "Somewhere in the world"
+
+        [[params.contact.list]]
+        icon = "fas fa-phone-square"
+        url = "tel:"
+        text = "confidential"
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:blog@bascodes.com"
+        text = "blog@bascodes.com"
+        [[params.contact.list]]
+        icon = "fas fa-globe"
+        url = "https://bas.bio"
+        text = "My links on the web"
+
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Python"
+        [[params.skills.list]]
+        title = "Lua"
+        [[params.skills.list]]
+        title = "LISP"
+
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "Master of Desaster"
+        university = "University of Life"
+        dates = "1990-present"
+
+
+    [params.awards]
+        enable = true
+
+        [[params.awards.list]]
+        name = "Professional Scrum Master™ I"
+        body = "scrum.org"
+        date = "2018"
+
+
+    [params.languages]
+        enable = true
+
+        [[params.languages.list]]
+        name = "Klingon"
+        level = "Fluent"
+
+        [[params.languages.list]]
+        name = "English"
+        level = "Fluent"
+
+
+    [params.interests]
+        enable = true
+
+        [[params.interests.list]]
+        name = "Counting Sheeps"
+
+
+    [params.summary]
+        enable = true
+        text = "I am the 10 eggs developer you are looking for."
+
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "Intern"
+        dates = "2000 - Present"
+        company = "Compuglobal Hyper Mega Net"
+        details = "Increased the baudrate for comic book guy"
+        [[params.experience.list.items]]
+        details = "Took buttery notes"
+
+
+
+    [params.projects]
+        enable = true
+
+        [[params.projects.list]]
+        title = "This Resume"
+        meta = "GitHub project"
+        url = "https://github.com/codewithbas/resume"
+        tagline = "A newsletter with a free PDF generator"
+
+
+    [params.information]
+        enable = false
+
+        [[params.information.list]]
+        title = "Papers"
+        [[params.information.list.items]]
+        details = "2018 · Lorem Ipsum"
+        [[params.information.list.items]]
+        details = "2016 · Sed Fringilla"
+
+        [[params.information.list]]
+        title = "Interests"
+        details = "Cooking, Beekeeping, Cycling"
+
+    [params.social]
+        enable = true
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "https://github.com/codewithbas"
+        title = "/codewithbas"
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "https://linkedin.com/in/bascodes"
+        title = "/in/bascodes"
+        [[params.social.list]]
+        icon = "fab fa-twitter-square"
+        url = "https://twitter.com/bascodes"
+        title = "@bascodes"

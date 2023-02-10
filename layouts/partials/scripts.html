@@ -1,0 +1,12 @@
+<!-- FontAwesome JS-->
+<script
+  defer
+  src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"
+></script>
+
+ {{ $darkModeJs :=
+resources.Get "js/darkmode.js" }} {{ if .Site.IsServer }}
+<script src="{{ $darkModeJs.Permalink }}"></script>
+{{ else }}
+<script src="{{ ($darkModeJs | minify | fingerprint).RelPermalink }}"></script>
+{{ end }}

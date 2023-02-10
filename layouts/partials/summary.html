@@ -1,0 +1,22 @@
+<div class="resume-intro py-3">
+  <div class="media flex-column flex-md-row align-items-center">
+    {{ if .Site.Params.profile.avatar }}
+    <img
+      class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded-circle mx-auto"
+      src="/assets/images/{{ .Site.Params.profile.avatar }}"
+      alt="image"
+    />
+    {{ end }}
+
+    <div class="media-body text-left">
+      <p class="mb-0">{{ .Site.Params.summary.text | markdownify }}</p>
+    </div>
+
+    <div class="pdf-cta">
+      <a class="pdf-link" href="/resume.a4.pdf">Download A4 Format</a> | <a class="pdf-link" href="/resume.letter.pdf">Download US Letter Format</a>
+    </div>
+
+    <!--//media-body-->
+  </div>
+</div>
+<!--//resume-intro-->

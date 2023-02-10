@@ -1,0 +1,27 @@
+
+<div class="resume-header">
+
+    <div class="dark-mode-switch d-flex">
+        <div class="form-check form-switch mx-auto mx-md-0">
+            <input type="checkbox" class="form-check-input me-2" id="btnSwitch" />
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+        </div>
+    </div>
+
+    <!-- <div class="d-flex">
+        <button class="btn btn-primary" id="btnSwitch">Toggle Dark Mode</button>
+    </div> -->
+    
+    <div class="row align-items-center">
+
+        {{ if .Site.Params.profile.enable }}
+        {{ partial "profile.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.contact.enable }}
+        {{ partial "contact.html" . }}
+        {{ end }}
+
+    </div><!--//row-->
+
+</div><!--//resume-header-->

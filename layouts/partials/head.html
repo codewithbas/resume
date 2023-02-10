@@ -1,0 +1,64 @@
+<title>{{ .Site.Title }}</title>
+
+<!-- Meta -->
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="{{ .Site.Params.description }}" />
+<meta name="author" content="{{ .Site.Params.author }}" />
+
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+<meta name="referrer" content="unsafe-url" />
+
+<meta property="og:title" content="{{ .Site.Params.author }} – {{ .Site.Params.description }}" />
+<meta name="twitter:title" content="{{ .Site.Params.author }} – {{ .Site.Params.description }}" />
+<meta itemProp="name" content="{{ .Site.Params.author }}" />
+<meta name="application-name" content="{{ .Site.Params.author }} – {{ .Site.Params.description }}" />
+<meta property="og:site_name" content="{{ .Site.Params.author }} – {{ .Site.Params.description }}" />
+
+<link rel="canonical" href="{{ .Site.BaseURL }}" itemProp="url" />
+<meta name="url" content="{{ .Site.BaseURL }}" />
+<meta name="twitter:url" content="{{ .Site.BaseURL }}" />
+<meta property="og:url" content="{{ .Site.BaseURL }}" />
+
+<meta itemProp="image" content="/{{ .Site.Params.og_image }}" />
+<meta property="og:image" content="/{{ .Site.Params.og_image }}" />
+<meta name="twitter:image" content="/{{ .Site.Params.og_image }}" />
+<meta name="twitter:image:src" content="/{{ .Site.Params.og_image }}" />
+<meta name="twitter:site" content="{{ .Site.Params.twitterName }}" />
+
+<meta name="twitter:card" content="summary_large_image" />
+
+<meta property="og:type" content="website" />
+
+<meta itemProp="description" content="{{ .Site.Params.description }}" />
+<meta property="og:description" content="{{ .Site.Params.description }}" />
+<meta name="description" content="{{ .Site.Params.description }}" />
+<meta name="twitter:description" content="{{ .Site.Params.description }}" />
+
+<meta name="author" content="{{ .Site.Params.author }}" />
+
+
+
+
+<!-- Google Fonts -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
+/>
+
+<!-- Theme SCSS -->
+{{ with resources.Get "scss/devresume.scss" | toCSS | minify | fingerprint }}
+<style>
+   {{ .Content|safeCSS }}
+</style>
+{{ end }}
