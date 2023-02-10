@@ -31,8 +31,8 @@ googleAnalytics = "UA-XXXXXXX-Y"
         text = "confidential"
         [[params.contact.list]]
         icon = "fas fa-envelope-square"
-        url = "mailto:blog@bascodes.com"
-        text = "blog@bascodes.com"
+        url = "mailto:mail@example.org"
+        text = "mail@example.org"
         [[params.contact.list]]
         icon = "fas fa-globe"
         url = "https://bas.bio"
