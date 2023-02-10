@@ -42,6 +42,7 @@ jobs:
           PDFCO_KEY: ${{ secrets.PDFCO_KEY }}
           RESUME_URL: ${{ vars.RESUME_URL }}
         run: |
+          mkdir static_pdf
           python get_pdf.py
           cp static_pdf/*.pdf ./static/
           cp static_pdf/*.pdf ./public/
