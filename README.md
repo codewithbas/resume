@@ -12,4 +12,6 @@ Here is what you need:
 
 ## How it looks
 
+![](screenshot.png)
+
 [https://resume-demo.bas.work](https://resume-demo.bas.work)
