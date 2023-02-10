@@ -12,4 +12,4 @@ Here is what you need:
 
 ## How it looks
 
-[https://resume-demo.bas.work](https://resume-demo.bas.work) 
+[https://resume-demo.bas.work](https://resume-demo.bas.work)
