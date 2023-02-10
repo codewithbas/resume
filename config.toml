@@ -18,7 +18,6 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
         name = "John Doe"
         tagline = "Demo Resume"
-        tagline_ = "Software Engineer | Consultant | Trainer"
         avatar = "bas-steins-2.jpg"
 
     [params.contact]
