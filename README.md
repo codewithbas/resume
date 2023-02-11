@@ -4,6 +4,8 @@ If you want a good looking resume, look no further.
 
 Just clone that repo, edit `config.toml` and follow the instructions on this blog post to get a nice looking online resume with automated PDFs.
 
+For a detailled breakdown, head over to my [blog post](https://bas.codes/posts/github-actions-resume)
+
 Here is what you need:
 
 - An account on netlify (free)
