@@ -112,7 +112,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         title = "This Resume"
         meta = "GitHub project"
         url = "https://github.com/codewithbas/resume"
-        tagline = "A newsletter with a free PDF generator"
+        tagline = "A resume with a free PDF generator"
 
 
     [params.information]
