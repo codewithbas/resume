@@ -1,66 +1,74 @@
 # Page settings
 
-baseURL = "https://resume-demo.bas.work/"
+baseURL = "https://jashwanthgowda-resume.netlify.app/"
 languageCode = "en"
-title = "John Doe"
+title = "Jashwanth Gowda R"
 enableGitInfo = false
 googleAnalytics = "UA-XXXXXXX-Y"
 
 [params]
-    author = "John Doe"
-    description = "Demo Resume"
+    author = "Jashwanth Gowda R"
+    description = "Software Engineer - Flutter Developer"
     og_image = "better-software.png"
-    twitterName = "@bascodes"
-    ghRepo = "https://github.com/codewithbas/resume/"
+    twitterName = "@Jash_gowda_6"
+    ghRepo = "https://github.com/Jashwanth-Gowda-R/resume"
     hugoRepo = "https://github.com/gohugoio/hugo/"
 
     [params.profile]
         enable = true
-        name = "John Doe"
-        tagline = "Demo Resume"
-        avatar = "bas-steins-2.jpg"
+        name = "Jashwanth Gowda R"
+        tagline = "Software Engineer - Flutter Developer"
+        avatar = "jashu.jpg"
 
     [params.contact]
         enable = true
 
-        location = "Somewhere in the world"
+        location = "Bangalore,India"
 
         [[params.contact.list]]
         icon = "fas fa-phone-square"
-        url = "tel:"
-        text = "confidential"
+        url = "tel:+919986621042"
+        text = "+919986621042"
         [[params.contact.list]]
         icon = "fas fa-envelope-square"
-        url = "mailto:mail@example.org"
-        text = "mail@example.org"
+        url = "mailto:webdevjash6@gmail.com"
+        text = "webdevjash6@gmail.com"
         [[params.contact.list]]
         icon = "fas fa-globe"
-        url = "https://bas.bio"
-        text = "My links on the web"
+        url = "https://jashwanthgowda.vercel.app/"
+        text = "https://jashwanthgowda.vercel.app/"
 
 
     [params.skills]
         enable = true
 
         [[params.skills.list]]
-        title = "Python"
+        title = "Flutter "
         [[params.skills.list]]
-        title = "Lua"
+        title = "Dart"
         [[params.skills.list]]
-        title = "LISP"
+        title = "Javascript"
+        [[params.skills.list]]
+        title = "ReactJS"
+        [[params.skills.list]]
+        title = "Riverpod"
+        [[params.skills.list]]
+        title = "React-MUI"
+        [[params.skills.list]]
+        title = "Bootstrap"
 
 
     [params.education]
         enable = true
 
         [[params.education.list]]
-        degree = "Master of Desaster"
-        university = "University of Life"
-        dates = "1990-present"
+        degree = "Bachelor of Telecommunication Engineering"
+        university = "Don Bosco Institute Of Technology(VTU)"
+        dates = "July. 2015 – May. 2019"
 
 
     [params.awards]
-        enable = true
+        enable = false
 
         [[params.awards.list]]
         name = "Professional Scrum Master™ I"
@@ -72,36 +80,80 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
 
         [[params.languages.list]]
-        name = "Klingon"
-        level = "Fluent"
+        name = "Kannada"
+        level = "Native Proficiency"
 
         [[params.languages.list]]
         name = "English"
-        level = "Fluent"
+        level = "Professional Working Proficiency"
 
 
     [params.interests]
         enable = true
 
         [[params.interests.list]]
-        name = "Counting Sheeps"
+        name = "Coding"
+
+        [[params.interests.list]]
+        name = "Cricket"
+
+        [[params.interests.list]]
+        name = "Fitness"
 
 
     [params.summary]
         enable = true
-        text = "I am the 10 eggs developer you are looking for."
+        text = "I'm a self-taught Software Engineer and Passionate Flutter Developer with 2+ years of experience, Primarily focused on Designing and Developing Flutter-based Applications. I have the experience of building Mobile Applications for Android using Flutter,Web Applications using Flutter, ReactJs, Opencart, WordPress, Ghost & Jekyll, and Responsive mobile-first sites with Bootstrap & Sass."
 
 
     [params.experience]
         enable = true
 
         [[params.experience.list]]
-        title = "Intern"
-        dates = "2000 - Present"
-        company = "Compuglobal Hyper Mega Net"
-        details = "Increased the baudrate for comic book guy"
+        title = "Software Engineer -1, "
+        dates = "July. 2021 – Nov. 2022"
+        company = "Digital Green"
+        details = "Developed and Implemented the below mobile and web application from the ground up :"
         [[params.experience.list.items]]
-        details = "Took buttery notes"
+        details = "Farmstack Datahub - FarmStack is a digital infrastructure for secured data sharing for food and agriculture. 
+	    FarmStack helps users share data directly with each other and enforce usage policy that restricts unintended misuse of data.
+        My role was to develop frontend side of  this application using the React Library.
+        Technologies used:  Javascript, ReactJS,Mui,Bootstrap."
+        [[params.experience.list.items]]
+        details = " KD Officer : A mobile app used by ground front line workers to collect farmer’s crop harvest data   
+        that helps FPOs make informed decision about the sales planning.
+        My role was to develop frontend side of  this application using the Flutter Framework."
+        [[params.experience.list.items]]
+        details = "Explored new technologies and upgraded the existing tech stack."
+        [[params.experience.list.items]]
+        details = "Responsible for all the Bug fixes, Documentation and feature implementation of the Flutter Consent Module."
+        [[params.experience.list.items]]
+        details = "Troubleshooted style issues, browser compatibility issues."
+
+        [[params.experience.list]]
+        title = "Software Engineer Intern"
+        dates = "Oct. 2019 – April. 2021"
+        company = " Vrook-Transforming Learning"
+        details = "  Designed,Developed and Implemented the below web application from the ground up :"
+        [[params.experience.list.items]]
+        details = "Booksbeka E-commerce Web Application - Booksbeka.com is Karnataka's largest online store for engineering books, 	
+        connecting students, colleges, and suppliers.
+        My role was to design, develop and deploy this application using the OpenCart framework.
+        Technologies used: Bootstrap, Sass, Javascript, Opencart, MySQL"
+        [[params.experience.list.items]]
+        details = "Open EDX -  Open edX is an open-source Edu-Tech Platform that provides learner-centric, enables online 
+        campuses,instructor-led courses, degree programs, and self-paced courses using a single platform. 
+        Key components of the project: Learning Management System (LMS) and Content management system(CMS). 
+        My role was to design and develop a Mobile Responsive Theme for Learning Management System (LMS). 
+        Technologies used: Bootstrap, Sass,  Javascript, Docker and Kubernetes."
+        [[params.experience.list.items]]
+        details = "Vrook-Content Web Application -  Designed and developed a web application to showcase the company’s product  
+        and  partnerships. 
+        Technologies used: WordPress, MySQL, Bootstrap, Sass and Elementor. "
+        [[params.experience.list.items]]
+        details = " Vrook-Blog Application -   Developed an end-to-end blogging platform that gives access to all teams in the company  to share 
+        their experiences and knowledge.
+        Technologies used: Ghost, MySQL, Bootstrap and Sass."
 
 
 
@@ -135,12 +187,12 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.social.list]]
         icon = "fab fa-github-square"
         url = "https://github.com/codewithbas"
-        title = "/codewithbas"
+        title = "https://github.com/codewithbas"
         [[params.social.list]]
         icon = "fab fa-linkedin"
-        url = "https://linkedin.com/in/bascodes"
-        title = "/in/bascodes"
+        url = "https://www.linkedin.com/in/jashwanthgowda-6666"
+        title = "https://www.linkedin.com/in/jashwanthgowda-6666"
         [[params.social.list]]
         icon = "fab fa-twitter-square"
-        url = "https://twitter.com/bascodes"
-        title = "@bascodes"
+        url = "https://twitter.com/Jash_gowda_6"
+        title = "https://twitter.com/Jash_gowda_6"
