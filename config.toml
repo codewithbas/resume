@@ -2,13 +2,13 @@
 
 baseURL = "https://resume-demo.bas.work/"
 languageCode = "en"
-title = "John Doe"
+title = "David Pacold"
 enableGitInfo = false
 googleAnalytics = "UA-XXXXXXX-Y"
 
 [params]
-    author = "John Doe"
-    description = "Demo Resume"
+    author = "David Pacold"
+    description = "My Resume"
     og_image = "better-software.png"
     twitterName = "@bascodes"
     ghRepo = "https://github.com/codewithbas/resume/"
