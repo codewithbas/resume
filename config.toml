@@ -16,67 +16,76 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
     [params.profile]
         enable = true
-        name = "John Doe"
-        tagline = "Demo Resume"
+        name = "Ryan Lang"
+        tagline = "Resume"
         avatar = "bas-steins-2.jpg"
 
     [params.contact]
         enable = true
 
-        location = "Somewhere in the world"
+        location = "North Carolina"
 
         [[params.contact.list]]
         icon = "fas fa-phone-square"
         url = "tel:"
-        text = "confidential"
+        text = "(917)-535-5264"
         [[params.contact.list]]
         icon = "fas fa-envelope-square"
         url = "mailto:mail@example.org"
-        text = "mail@example.org"
+        text = "ralang2005@gmail.com"
         [[params.contact.list]]
         icon = "fas fa-globe"
         url = "https://bas.bio"
-        text = "My links on the web"
+        text = "ralang@students.wcpss.net"
 
 
     [params.skills]
         enable = true
 
         [[params.skills.list]]
-        title = "Python"
+        title = "Word and Powerpoint"
         [[params.skills.list]]
-        title = "Lua"
+        title = "Keyboarding"
         [[params.skills.list]]
-        title = "LISP"
+        title = "Holding my breath for two minutes"
 
 
     [params.education]
         enable = true
 
         [[params.education.list]]
-        degree = "Master of Desaster"
-        university = "University of Life"
-        dates = "1990-present"
+        degree = "Student at"
+        university = "Apex High School"
+        dates = "2019-Present"
+        
+        [[params.education.list]]
+        degree = "Dual enrolled at"
+        university = "Wake Tech Community College"
+        dates = "2022-Present"
 
 
     [params.awards]
-        enable = true
+        enable = false
 
         [[params.awards.list]]
-        name = "Professional Scrum Master™ I"
+        name = "Honor Roll"
         body = "scrum.org"
-        date = "2018"
+        date = ""
 
 
     [params.languages]
         enable = true
 
         [[params.languages.list]]
-        name = "Klingon"
+        name = "English"
         level = "Fluent"
 
         [[params.languages.list]]
-        name = "English"
+        name = "Spanish"
+        level = "Able to semi communicate, have some trouble interpreting unless text is written down"
+        
+        [[params.language.list]]
+        name = "Gibberish"
         level = "Fluent"
 
 
@@ -84,26 +93,46 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
 
         [[params.interests.list]]
-        name = "Counting Sheeps"
+        name = "Listening to Music"
+        [[params.interests.list]]
+        name = "Marketing"
+        [[params.interests.list]]
+        name = "Website Creation and Design"
+        [[params.interests.list]]
+        name = "Selling Items and Collectibles Online"
+        [[params.interests.list]]
+        name = "Juggling"
 
 
     [params.summary]
         enable = true
-        text = "I am the 10 eggs developer you are looking for."
+        text = "Student at Apex High School, expected to graduate in Summer 2023."
 
 
     [params.experience]
         enable = true
 
         [[params.experience.list]]
-        title = "Intern"
-        dates = "2000 - Present"
-        company = "Compuglobal Hyper Mega Net"
-        details = "Increased the baudrate for comic book guy"
+        title = "AOIT Member"
+        dates = "2019-Present"
+        company = "Academy of Information & Technology"
+        details = "A program that entails more computer related challenges and promised a better high school experience"
         [[params.experience.list.items]]
-        details = "Took buttery notes"
-
-
+        details = "Signed up before graduating middle school through a lottery program and essay submission. Work more in technical aspect and take more programming and web design related classes."
+        [[params.experience.list]]
+        title = "Dogsitting"
+        dates = "2018-Present"
+        company = "Independently Operated by Yours Truly"
+        details = "Watching pets for neighbors and family members"
+        [[params.experience.list.items]]
+        details = "Working with neighbors and family members to watch their pets, mostly dogs in 2018 gave me a sense of responsibility and made me who I am today. It taught me to be kind, respectful, caring, and someone that people can trust and turn to with anything."
+        [[params.experience.list]]
+        title = "Job Shadow Experience"
+        dates = "2019"
+        company = "Academy of Information & Technology & Green Hope Elementary School"
+        details = "Shadow a job of your choice and report your findings"
+        [[params.experience.list.items]]
+        details = "Working alongside a teacher taught me that in some situations you have to be patient and cannot be irritated easily. It taught me that by sharing common interests even if not in the most advanced of ways, you can get along with someone."
 
     [params.projects]
         enable = true
@@ -111,23 +140,28 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.projects.list]]
         title = "This Resume"
         meta = "GitHub project"
-        url = "https://github.com/codewithbas/resume"
+        url = "google.com"
         tagline = "A resume with a free PDF generator"
+        [[params.projects.list]]
+        title = "Travel and Tourism Project"
+        meta = "Academy of Information & Technology Project"
+        url = "google.com"
+        tagline = "Be given a budget and plan an enjoyable vacation to a country of your groups choice while taking notes of costs and how much money you're spending."
 
 
     [params.information]
         enable = false
 
         [[params.information.list]]
-        title = "Papers"
+        title = "Family History"
         [[params.information.list.items]]
-        details = "2018 · Lorem Ipsum"
-        [[params.information.list.items]]
-        details = "2016 · Sed Fringilla"
-
+        details = "I am originally from Brooklyn, New York. I was born there in 2005 and moved to Cary, North Carolina when I was 9 in 2014. I also have two dogs, Murphy, a black and white imperial shih tzu, and Gizmo, a white and brown shih tzu who came down to live with us in the summer of 2022 after the passing of his owner."
         [[params.information.list]]
-        title = "Interests"
-        details = "Cooking, Beekeeping, Cycling"
+        title = "Hobbies"
+        [[params.information.list.items]]
+        details = "My hobbies, include attending and completing schoolwork, hanging out with friends inside and outside of school, browsing the web i.e. watching youtube videos or listening to my favorite songs and artists in my spare time, bowling on a team on saturday mornings at Buffaloe Lanes, and as of last year, playing badminton, a sport that I am surprisingly good at."
+
+      
 
     [params.social]
         enable = true
